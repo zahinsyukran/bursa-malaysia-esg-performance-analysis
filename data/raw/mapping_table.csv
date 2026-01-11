@@ -1,0 +1,38 @@
+Sector,Ticker,Company Name,Benchmark (KLCI),ESG Group (F4GBM)
+Finance,1155.KL,Maybank,Yes,Yes
+,1023.KL,CIMB Group,Yes,Yes
+,1295.KL,Public Bank,Yes,Yes
+,5819.KL,Hong Leong Bank,Yes,No
+Energy,7100.KL,Dialog Group,No,Yes
+,7293.KL,Yinson Holdings,No,Yes
+,5202.KL,MSP (Sapura Energy),No,No
+Utilities,5347.KL,Tenaga Nasional,Yes,Yes
+,6033.KL,PETRONAS Gas,Yes,Yes
+,5264.KL,Malakoff,No,Yes
+Consumer,4707.KL,Nestle (Malaysia),Yes,Yes
+,3182.KL,Genting,Yes,Yes
+,2658.KL,Ajinomoto (M),No,New (Jan 26)
+Industrial,5183.KL,PETRONAS Chemicals,Yes,Yes
+,8869.KL,Press Metal,Yes,Yes
+,5916.KL,Malaysia Smelting (MSC),No,New (Jan 26)
+Healthcare,5225.KL,IHH Healthcare,Yes,Yes
+,7113.KL,Top Glove,No,Yes
+,5878.KL,KPJ Healthcare,No,Yes
+Tech,0166.KL,Inari Amertron,Yes,Yes
+,0097.KL,ViTrox,No,Yes
+,0138.KL,MY E.G. Services,No,Yes
+Plantation,5285.KL,SD Guthrie,Yes,Yes
+,1961.KL,IOI Corp,Yes,Yes
+,2445.KL,Kuala Lumpur Kepong,Yes,Yes
+Property,5249.KL,IOI Properties,No,Yes
+,5288.KL,Sime Darby Property,No,Yes
+,5401.KL,Tropicana Corp,No,New (Jan 26)
+Construction,5398.KL,Gamuda,Yes,Yes
+,3336.KL,IJM Corporation,No,Yes
+,5263.KL,Sunway Construction,No,Yes
+Telecomm,6947.KL,CelcomDigi,Yes,Yes
+,6012.KL,Maxis,Yes,Yes
+,4863.KL,Telekom Malaysia,Yes,Yes
+Logistics,3816.KL,MISC,Yes,Yes
+,5099.KL,Capital A Berhad,Yes,Yes
+,5246.KL,Westports Holdings,Yes,Yes
