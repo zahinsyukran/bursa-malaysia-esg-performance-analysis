@@ -1,0 +1,8 @@
+# Ignore .pbix file
+*.pbix
+
+# Ignore user-specific Power BI settings
+.pbi/
+
+# Ignore large data caches
+*.abf

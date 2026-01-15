@@ -1,0 +1,216 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.53\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"visible\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{}",
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSection8f81c2586bad7d058b98",
+      "config": "{}",
+      "name": "Pod1",
+      "referenceScope": 1
+    }
+  ],
+  "publicCustomVisuals": [
+    "enlightenstorytellerE5CA73CE1C2C43878E5C0EBB4652BDD5"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"204L\"}}}}}]}}",
+      "displayName": "Performance Benchmarking",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3177dc008dee97a730c3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":178.0064308681672,\"y\":0,\"z\":3000,\"width\":352.9260450160772,\"height\":210.93247588424435,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"bursa_analysis_final.Average Cumulative Return\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Average Cumulative Return\"},\"Name\":\"bursa_analysis_final.Average Cumulative Return\",\"NativeReferenceName\":\"Average Cumulative Return\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Average Cumulative Return\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 210.93,
+          "width": 352.93,
+          "x": 178.01,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"739a4cb0060c8b716b05\",\"layouts\":[{\"id\":0,\"position\":{\"x\":916.9230769230769,\"y\":0,\"z\":5000,\"width\":363.0769230769231,\"height\":211.2820512820513,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"mapping_table.Total Project Tickers\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Project Tickers\"},\"Name\":\"mapping_table.Total Project Tickers\",\"NativeReferenceName\":\"Total Project Tickers\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Total Project Tickers\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 211.28,
+          "width": 363.08,
+          "x": 916.92,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"8e10f30cd693e098d010\",\"layouts\":[{\"id\":0,\"position\":{\"x\":178.0064308681672,\"y\":210.93247588424435,\"z\":2000,\"width\":725.4019292604502,\"height\":247.97427652733117,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(bursa_analysis_final.Ticker)\"}],\"Details\":[{\"queryRef\":\"bursa_analysis_final.ESG Group (F4GBM)\"}],\"Group\":[{\"queryRef\":\"mapping_table.Sector\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ESG Group (F4GBM)\"},\"Name\":\"bursa_analysis_final.ESG Group (F4GBM)\",\"NativeReferenceName\":\"ESG Group (F4GBM)\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Ticker\"}},\"Function\":5},\"Name\":\"CountNonNull(bursa_analysis_final.Ticker)\",\"NativeReferenceName\":\"Count of Ticker\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Sector\"},\"Name\":\"mapping_table.Sector\",\"NativeReferenceName\":\"Sector\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bursa_analysis_final\"}},\"Property\":\"Sector\"}},\"Right\":{\"Literal\":{\"Value\":\"''\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 247.97,
+          "width": 725.40,
+          "x": 178.01,
+          "y": 210.93,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"928d30a76245c08e4876\",\"layouts\":[{\"id\":0,\"position\":{\"x\":178.0064308681672,\"y\":458.90675241157555,\"z\":0,\"width\":1101.9935691318328,\"height\":261.3504823151125,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"bursa_analysis_final.Date\",\"active\":true}],\"Y\":[{\"queryRef\":\"bursa_analysis_final.Average Cumulative Return\"}],\"Series\":[{\"queryRef\":\"mapping_table.ESG Group (F4GBM)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Date\"},\"Name\":\"bursa_analysis_final.Date\",\"NativeReferenceName\":\"Date\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Average Cumulative Return\"},\"Name\":\"bursa_analysis_final.Average Cumulative Return\",\"NativeReferenceName\":\"Average Cumulative Return\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"ESG Group (F4GBM)\"},\"Name\":\"mapping_table.ESG Group (F4GBM)\",\"NativeReferenceName\":\"ESG Group (F4GBM)\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Date\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 261.35,
+          "width": 1101.99,
+          "x": 178.01,
+          "y": 458.91,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"bc740b3ce055c4ac5dcc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":916.7845659163987,\"y\":210.93247588424435,\"z\":6000,\"width\":363.2154340836013,\"height\":247.97427652733117,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"mapping_table.Ticker\"},{\"queryRef\":\"mapping_table.Company Name\"},{\"queryRef\":\"Sum(bursa_analysis_final.Cumulative_Return)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ticker\"},\"Name\":\"mapping_table.Ticker\",\"NativeReferenceName\":\"Ticker\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cumulative_Return\"}},\"Function\":0},\"Name\":\"Sum(bursa_analysis_final.Cumulative_Return)\",\"NativeReferenceName\":\"Sum of Cumulative_Return\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Company Name\"},\"Name\":\"mapping_table.Company Name\",\"NativeReferenceName\":\"Company Name\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ticker\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"125.78535745271918D\"}}}},\"selector\":{\"metadata\":\"Sum(bursa_analysis_final.Cumulative_Return)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"58.99244148088519D\"}}}},\"selector\":{\"metadata\":\"mapping_table.Ticker\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"138.50988024568514D\"}}}},\"selector\":{\"metadata\":\"mapping_table.Company Name\"}}]}}}",
+          "filters": "[]",
+          "height": 247.97,
+          "width": 363.22,
+          "x": 916.78,
+          "y": 210.93,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"ec0965d207dae2a5b060\",\"layouts\":[{\"id\":0,\"position\":{\"x\":530.9324758842444,\"y\":0,\"z\":4000,\"width\":385.8520900321543,\"height\":210.93247588424435,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"bursa_analysis_final.Performance Gap\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Performance Gap\"},\"Name\":\"bursa_analysis_final.Performance Gap\",\"NativeReferenceName\":\"Performance Gap\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Performance Gap\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 210.93,
+          "width": 385.85,
+          "x": 530.93,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f8ea852cbc639eebcb0a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.260450160771704,\"y\":0,\"z\":1000,\"width\":168.7459807073955,\"height\":720.2572347266881,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"mapping_table.Sector\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Sector\"},\"Name\":\"mapping_table.Sector\",\"NativeReferenceName\":\"Sector\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 720.26,
+          "width": 168.75,
+          "x": 9.26,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Strategic Insights & Conclusion",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection6a35528a0a0a01b93462",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5149f825c390b9b9a5c3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":9,\"z\":0,\"width\":618.821630347054,\"height\":365,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"mapping_table.Company Name\"},{\"queryRef\":\"bursa_analysis_final.Sharpe Ratio\"},{\"queryRef\":\"mapping_table.Sector\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Company Name\"},\"Name\":\"mapping_table.Company Name\",\"NativeReferenceName\":\"Company Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Sharpe Ratio\"},\"Name\":\"bursa_analysis_final.Sharpe Ratio\",\"NativeReferenceName\":\"Sharpe Ratio\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Sector\"},\"Name\":\"mapping_table.Sector\",\"NativeReferenceName\":\"Sector\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Company Name\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"card\":[{\"properties\":{\"outlineStyle\":{\"expr\":{\"Literal\":{\"Value\":\"4D\"}}},\"outlineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"cardBackground\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"barShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"padding\":[{\"properties\":{\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterb1f763af121834266cb4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"mapping_table\"}},\"Property\":\"Company Name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0},{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Company Name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Average Cumulative Return\"}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Company Name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 365.00,
+          "width": 618.82,
+          "x": 0.00,
+          "y": 9.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"677b29a38ccd05038a0a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":618.821630347054,\"y\":0,\"z\":1000,\"width\":661.1783696529459,\"height\":382.2437449556094,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"qnaVisual\",\"drillFilterOtherVisuals\":true,\"objects\":{\"hiddenProperties\":[{\"properties\":{\"savedUtterance\":{\"expr\":{\"Literal\":{\"Value\":\"'highest average volatility risk by sector'\"}}}}}]}}}",
+          "height": 382.24,
+          "width": 661.18,
+          "x": 618.82,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"f5e6b3b766bae6945521\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":382.2437449556094,\"z\":2000,\"width\":1280,\"height\":337.82082324455206,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Final Investment Verdict: ESG vs. Benchmark (2021-2026)\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}]},{\"textRuns\":[{\"value\":\"Performance Reality:\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}},{\"value\":\" The ESG-compliant portfolio (Yes) delivered an average cumulative return of \",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\"21%\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}},{\"value\":\", trailing the market benchmark (No) by a \",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\"-0.61% performance gap\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}},{\"value\":\".\",\"textStyle\":{\"fontSize\":\"20pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"The \\\"Safety\\\" Benefit:\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}},{\"value\":\" Despite the slight return lag, the \",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\"Volatility Risk\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}},{\"value\":\" analysis from Page 2 reveals that ESG sectors—particularly \",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\"Finance and Healthcare\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}},{\"value\":\"—offered significantly higher price stability compared to the broader market.\",\"textStyle\":{\"fontSize\":\"20pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Strategic Takeaway:\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}},{\"value\":\" For investors in Bursa Malaysia, ESG should be viewed as a \",\"textStyle\":{\"fontSize\":\"20pt\"}},{\"value\":\"defensive strategy\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}},{\"value\":\". It provides a \\\"cushion\\\" during market volatility even if it doesn't always lead in raw growth during bull markets.\",\"textStyle\":{\"fontSize\":\"20pt\"}}],\"listType\":\"bullet\"}]}}]}}}",
+          "filters": "[]",
+          "height": 337.82,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 382.24,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Risk-Adjusted Efficiency",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection8f81c2586bad7d058b98",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"110c7a378d26005612dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":641.3646055437101,\"y\":0,\"z\":4000,\"width\":244.71926083866384,\"height\":359.3461265103056,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"bursa_analysis_final.Sharpe Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Sharpe Ratio\"},\"Name\":\"bursa_analysis_final.Sharpe Ratio\",\"NativeReferenceName\":\"Sharpe Ratio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Sharpe Ratio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 359.35,
+          "width": 244.72,
+          "x": 641.36,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"2cf242403ec843468170\",\"layouts\":[{\"id\":0,\"position\":{\"x\":640.4548685145701,\"y\":359.3461265103056,\"z\":0,\"width\":639.54513148543,\"height\":359.3461265103056,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"scatterChart\",\"projections\":{\"Category\":[{\"queryRef\":\"bursa_analysis_final.Company Name\",\"active\":true}],\"X\":[{\"queryRef\":\"Sum(bursa_analysis_final.Volatility_Risk)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(bursa_analysis_final.Cumulative_Return)\"}],\"Series\":[{\"queryRef\":\"bursa_analysis_final.ESG Group (F4GBM)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Company Name\"},\"Name\":\"bursa_analysis_final.Company Name\",\"NativeReferenceName\":\"Company Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Volatility_Risk\"}},\"Function\":0},\"Name\":\"Sum(bursa_analysis_final.Volatility_Risk)\",\"NativeReferenceName\":\"Sum of Volatility_Risk\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Cumulative_Return\"}},\"Function\":0},\"Name\":\"Sum(bursa_analysis_final.Cumulative_Return)\",\"NativeReferenceName\":\"Sum of Cumulative_Return\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"ESG Group (F4GBM)\"},\"Name\":\"bursa_analysis_final.ESG Group (F4GBM)\",\"NativeReferenceName\":\"ESG Group (F4GBM)\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'1st Quadrant'\"}}},\"value\":{\"expr\":{\"Percentile\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"Sum(bursa_analysis_final.Volatility_Risk)\"}},\"K\":0.25}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"32D\"}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Sum(bursa_analysis_final.Volatility_Risk)\",\"id\":\"2\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'2nd Quadrant'\"}}},\"value\":{\"expr\":{\"Percentile\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"Sum(bursa_analysis_final.Volatility_Risk)\"}},\"K\":0.5}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"32D\"}}}},\"selector\":{\"metadata\":\"Sum(bursa_analysis_final.Volatility_Risk)\",\"id\":\"3\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'3rd Quadrant'\"}}},\"value\":{\"expr\":{\"Percentile\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"Sum(bursa_analysis_final.Volatility_Risk)\"}},\"K\":0.75}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"32D\"}}}},\"selector\":{\"metadata\":\"Sum(bursa_analysis_final.Volatility_Risk)\",\"id\":\"4\"}}],\"plotAreaShading\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Symmetry shading 1'\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"86D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Risk vs. Reward'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 359.35,
+          "width": 639.55,
+          "x": 640.45,
+          "y": 359.35,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"80adebe622ea06ba0d0e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":285.65742714996446,\"y\":0,\"z\":3000,\"width\":354.79744136460556,\"height\":359.3461265103056,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"bursa_analysis_final.Volatility Risk\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Volatility Risk\"},\"Name\":\"bursa_analysis_final.Volatility Risk\",\"NativeReferenceName\":\"Volatility Risk\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Volatility Risk\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 359.35,
+          "width": 354.80,
+          "x": 285.66,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"8afcb1ad12790d80860a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":886,\"y\":0,\"width\":394,\"height\":359,\"z\":5000,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"bursa_analysis_final.Benchmark Vol\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Benchmark Vol\"},\"Name\":\"bursa_analysis_final.Benchmark Vol\",\"NativeReferenceName\":\"Benchmark Vol\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Benchmark Vol\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 359.00,
+          "width": 394.00,
+          "x": 886.00,
+          "y": 0.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"a65f5fbbc60a4000353a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":8.187633262260128,\"y\":359.3461265103056,\"z\":1000,\"width\":632.2672352523099,\"height\":360.25586353944567,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"mapping_table.Sector\",\"active\":true}],\"Y\":[{\"queryRef\":\"bursa_analysis_final.Sharpe Ratio\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Sharpe Ratio\"},\"Name\":\"bursa_analysis_final.Sharpe Ratio\",\"NativeReferenceName\":\"Sharpe Ratio\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Sector\"},\"Name\":\"mapping_table.Sector\",\"NativeReferenceName\":\"Sector\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Sharpe Ratio\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 360.26,
+          "width": 632.27,
+          "x": 8.19,
+          "y": 359.35,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"bf7b74b15957d10c800c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2000,\"width\":285.65742714996446,\"height\":359.3461265103056,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"mapping_table.Sector\",\"active\":true}],\"Values\":[{\"queryRef\":\"bursa_analysis_final.Average Volatility Risk\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"b\",\"Entity\":\"bursa_analysis_final\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"mapping_table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Average Volatility Risk\"},\"Name\":\"bursa_analysis_final.Average Volatility Risk\",\"NativeReferenceName\":\"Average Volatility Risk\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Sector\"},\"Name\":\"mapping_table.Sector\",\"NativeReferenceName\":\"Sector\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"b\"}},\"Property\":\"Average Volatility Risk\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"gridHorizontal\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"rowHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}}}],\"columnHeaders\":[{\"properties\":{\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}},\"titleAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Center'\"}}}}}],\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"bursa_analysis_final\"}},\"Property\":\"Average Volatility Risk\"}},\"FillRule\":{\"linearGradient2\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#69FF44'\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#F80101'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"bursa_analysis_final.Average Volatility Risk\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'BoldHeaderFlashyRows'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 359.35,
+          "width": 285.66,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../ESG_Bursa_Analytics.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

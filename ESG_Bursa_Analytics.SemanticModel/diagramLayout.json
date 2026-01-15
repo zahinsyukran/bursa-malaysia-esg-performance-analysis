@@ -1,0 +1,48 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 294,
+            "y": -10
+          },
+          "nodeIndex": "bursa_analysis_final",
+          "nodeLineageTag": "68dc14ff-1224-4842-bb3d-688336677e37",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 26
+          },
+          "nodeIndex": "mapping_table",
+          "nodeLineageTag": "9584cf74-daf0-4407-aa2f-b74fcbbaeffe",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
